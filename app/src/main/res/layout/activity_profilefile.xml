@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilefile">
+
+
+    <TextView
+        android:id="@+id/personaldetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Personal Details"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="104dp"
+        android:text="Name: "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:text="Age: "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilename" />
+
+    <TextView
+        android:id="@+id/profilegender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:text="Gender: "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileage" />
+
+    <TextView
+        android:id="@+id/profilenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:text="Phone Number: "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilegender" />
+
+
+    <EditText
+        android:id="@+id/editprofilename"
+        android:layout_width="217dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Data Hidden"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/profilename"
+        app:layout_constraintTop_toBottomOf="@+id/personaldetails" />
+
+    <EditText
+        android:id="@+id/editprofileage"
+        android:layout_width="217dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Data Hidden"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toEndOf="@+id/profileage"
+        app:layout_constraintTop_toBottomOf="@+id/editprofilename" />
+
+    <EditText
+        android:id="@+id/editprofilegender"
+        android:layout_width="217dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Data Hidden"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toEndOf="@+id/profilegender"
+        app:layout_constraintTop_toBottomOf="@+id/editprofileage" />
+
+    <EditText
+        android:id="@+id/editprofilephone"
+        android:layout_width="184dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Data Hidden"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilenumber"
+        app:layout_constraintTop_toBottomOf="@+id/editprofilegender" />
+
+    <TextView
+        android:id="@+id/profilocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="Location: "
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilenumber"
+        app:layout_constraintVertical_bias="0.098" />
+
+
+    <EditText
+        android:id="@+id/editprofilelocation"
+        android:layout_width="217dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Data Hidden"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/profilocation"
+        app:layout_constraintTop_toBottomOf="@+id/editprofilephone" />
+
+    <ImageView
+        android:id="@+id/menu_main3"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:tint="#020202"
+        app:layout_constraintBottom_toBottomOf="@+id/headphonemusic3"
+        app:layout_constraintEnd_toStartOf="@+id/headphonemusic3"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headphonemusic3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageView
+        android:id="@+id/headphonemusic3"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:tint="#020202"
+        app:layout_constraintBottom_toBottomOf="@+id/messageemo3"
+        app:layout_constraintEnd_toStartOf="@+id/messageemo3"
+        app:layout_constraintTop_toTopOf="@+id/messageemo3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/stat_sys_headset" />
+
+    <ImageView
+        android:id="@+id/messageemo3"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:tint="#020202"
+        app:layout_constraintBottom_toBottomOf="@+id/profile3"
+        app:layout_constraintEnd_toStartOf="@+id/profile3"
+        app:layout_constraintTop_toTopOf="@+id/profile3"
+        app:srcCompat="@android:drawable/sym_action_chat" />
+
+    <ImageView
+        android:id="@+id/profile3"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:tint="#2F4A98"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <Button
+        android:id="@+id/edit_the_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="Update Profile"
+        app:layout_constraintBottom_toTopOf="@+id/messageemo3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editprofilelocation"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <Button
+        android:id="@+id/show_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="load"
+        android:text="Show Details"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_the_profile"
+        app:layout_constraintEnd_toStartOf="@+id/edit_the_profile"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_the_profile"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

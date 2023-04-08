@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".musicplayer">
+
+    <ImageView
+        android:id="@+id/menu_main2"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:tint="#020202"
+        app:layout_constraintBottom_toBottomOf="@+id/headphonemusic2"
+        app:layout_constraintEnd_toStartOf="@+id/headphonemusic2"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pause"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageView
+        android:id="@+id/headphonemusic2"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:tint="#2F4A98"
+        app:layout_constraintBottom_toBottomOf="@+id/messageemo2"
+        app:layout_constraintEnd_toStartOf="@+id/messageemo2"
+        app:layout_constraintTop_toBottomOf="@+id/pause"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/stat_sys_headset" />
+
+    <ImageView
+        android:id="@+id/messageemo2"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="28dp"
+        android:tint="#020202"
+        app:layout_constraintBottom_toBottomOf="@+id/profile2"
+        app:layout_constraintEnd_toStartOf="@+id/profile2"
+        app:layout_constraintTop_toBottomOf="@+id/stop"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/sym_action_chat" />
+
+    <ImageView
+        android:id="@+id/profile2"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:tint="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#403824"
+        android:onClick="play"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#100F0F"
+        android:onClick="stop"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#F18686"
+        android:onClick="pause"
+        android:text="Pause"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="10dp"
+        android:background="?android:attr/listDivider"
+        android:scrollbarSize="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#403824"
+        android:onClick="play2"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toStartOf="@+id/three"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toEndOf="@+id/one"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#403824"
+        android:onClick="play3"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#403824"
+        android:onClick="play4"
+        android:text="4"
+        app:layout_constraintEnd_toEndOf="@+id/one"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/one"
+        app:layout_constraintTop_toBottomOf="@+id/one" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#403824"
+        android:onClick="play5"
+        android:text="5"
+        app:layout_constraintEnd_toEndOf="@+id/two"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/two"
+        app:layout_constraintTop_toBottomOf="@+id/two" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#403824"
+        android:onClick="play6"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="@+id/three"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/three"
+        app:layout_constraintTop_toBottomOf="@+id/three" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#403824"
+        android:onClick="play7"
+        android:text="7"
+        app:layout_constraintBottom_toBottomOf="@+id/eight"
+        app:layout_constraintEnd_toEndOf="@+id/four"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/four"
+        app:layout_constraintTop_toBottomOf="@+id/four"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#403824"
+        android:onClick="play8"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="@+id/five"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/five"
+        app:layout_constraintTop_toBottomOf="@+id/five"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#403824"
+        android:onClick="play9"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@+id/eight"
+        app:layout_constraintEnd_toEndOf="@+id/six"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/six"
+        app:layout_constraintTop_toBottomOf="@+id/six"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <TextView
+        android:id="@+id/classicalmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Classical Music"
+        android:textColor="#365341"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

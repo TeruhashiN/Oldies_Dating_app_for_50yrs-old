@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".mainmenu">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="402dp"
+        android:layout_height="491dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/caloocanboy"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/caloocan" />
+
+            <ImageButton
+                android:id="@+id/babeko"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/babe" />
+
+            <ImageButton
+                android:id="@+id/moisess"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/moises" />
+
+            <ImageButton
+                android:id="@+id/dyos"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/dyo" />
+
+            <ImageButton
+                android:id="@+id/angelos"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/angelo" />
+
+            <ImageButton
+                android:id="@+id/yabess"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/yabes" />
+
+            <ImageButton
+                android:id="@+id/shairas"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/shaira" />
+
+            <ImageButton
+                android:id="@+id/mokaokas"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mokaoka" />
+
+            <ImageButton
+                android:id="@+id/liyuus"
+                android:layout_width="350dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/liyuu" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/toknow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="monospace"
+        android:text="@string/click_to_know"
+        android:textColor="#852B3D"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/menu_main"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:tint="#2F4A98"
+        app:layout_constraintBottom_toBottomOf="@+id/headphonemusic"
+        app:layout_constraintEnd_toStartOf="@+id/headphonemusic"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headphonemusic"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageView
+        android:id="@+id/headphonemusic"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:tint="#0E0D0D"
+        app:layout_constraintBottom_toBottomOf="@+id/messageemo"
+        app:layout_constraintEnd_toStartOf="@+id/messageemo"
+        app:layout_constraintTop_toTopOf="@+id/messageemo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/stat_sys_headset" />
+
+    <ImageView
+        android:id="@+id/messageemo"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:tint="#020202"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="@+id/profile"
+        app:srcCompat="@android:drawable/sym_action_chat" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="load"
+        android:tint="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

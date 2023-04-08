@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Oldies - Dating Application</string>
+    <string name="another">OR LOGIN WITH</string>
+    <string name="click_to_know">Find your soulmate</string>
+    <string name="abouthim">Bhoxz Mapagmahal Since Birth, been into military since kabataan broom brom skirt skrt</string>
+
+    <string-array name="labels_array">
+        <item></item>
+        <item>Abra</item>
+        <item>Agusan Del Norte</item>
+        <item>Agusan Del Sur</item>
+        <item>Aklan</item>
+        <item>Albay</item>
+        <item>Antique</item>
+        <item>Apayao</item>
+        <item>Aurora</item>
+        <item>Basilan</item>
+        <item>Bataan</item>
+        <item>Batanes</item>
+        <item>Batangas</item>
+        <item>Benguet</item>
+        <item>Biliran</item>
+        <item>Bohol</item>
+        <item>Bukidnon</item>
+        <item>Bulacan</item>
+        <item>Cagayan</item>
+        <item>Camarines Norte</item>
+        <item>Camarines Sur</item>
+        <item>Camigin</item>
+        <item>Capis</item>
+        <item>Catanduanes</item>
+        <item>Cavite</item>
+        <item>Cebu</item>
+        <item>Cotabato</item>
+        <item>Davao De Oro</item>
+        <item>Davao Del Norte</item>
+        <item>Eastern Samar</item>
+        <item>Isabella</item>
+        <item>La union</item>
+        <item>Leyte</item>
+        <item>Maguindanao Del Norte</item>
+        <item>Masbate</item>
+        <item>Negros Ocidental</item>
+        <item>Nueva Ecijia</item>
+        <item>Ocidental Mindoro</item>
+        <item>Palawan</item>
+        <item>Pampanga</item>
+        <item>Quirino</item>
+        <item>Rizal</item>
+        <item>Sorsogon</item>
+        <item>Sulu</item>
+        <item>Tarlac</item>
+        <item>Zambales</item>
+        <item>Zamboanga</item>
+    </string-array>
+
+</resources>

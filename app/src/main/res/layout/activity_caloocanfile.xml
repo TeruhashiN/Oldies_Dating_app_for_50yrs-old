@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".caloocanfile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/caloocan" />
+
+    <TextView
+        android:id="@+id/OcanName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Ocan, Boyet "
+        android:textStyle="bold"
+        android:textColor="#020202"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="66 Years Old"
+        android:textSize="15sp"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="@+id/OcanName"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/OcanName"
+        app:layout_constraintTop_toBottomOf="@+id/OcanName" />
+
+    <TextView
+        android:id="@+id/locationko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text="Caloocan, 369 km"
+        android:textColor="#020202"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="41dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/OcanName"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="About me"
+        android:textColor="#020202"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/abouthim"
+        android:layout_width="364dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:text="@string/abouthim"
+        android:textColor="#807D79"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/about"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/about"
+        app:layout_constraintTop_toBottomOf="@+id/about" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abouthim" />
+
+    <TextView
+        android:id="@+id/Interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Interests"
+        android:textColor="#020202"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <Button
+        android:id="@+id/Fliptop"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
+        android:checkable="false"
+        android:text="Fliptop"
+        android:textColor="#D59D9D"
+        app:layout_constraintEnd_toEndOf="@+id/Interest"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="@+id/Interest"
+        app:layout_constraintTop_toBottomOf="@+id/Interest"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.SearchBar" />
+
+    <Button
+        android:id="@+id/jackstone"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
+        android:checkable="false"
+        android:text="Jackstone"
+        android:textColor="#D59D9D"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/Interest"
+        app:layout_constraintTop_toBottomOf="@+id/Interest"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.SearchBar" />
+
+    <Button
+        android:id="@+id/gymnastic"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
+        android:checkable="false"
+        android:text="Gymnastic"
+        android:textColor="#D59D9D"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Interest"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.SearchBar" />
+
+    <ImageButton
+        android:id="@+id/messageme"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="116dp"
+        android:background="@null"
+        android:backgroundTint="#D0BA8D"
+        android:tint="#42340D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jackstone"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+    <TextView
+        android:id="@+id/messageme2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Message Me"
+        android:textColor="#250E0E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/messageme"
+        app:layout_constraintTop_toBottomOf="@+id/gymnastic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
